@@ -33,7 +33,6 @@ namespace App1
             TextView translatedPhoneWord = FindViewById<TextView>(Resource.Id.TranslatedPhoneWord);
             Button translateButton = FindViewById<Button>(Resource.Id.TranslateButton);
             Button crashes_Button = FindViewById<Button>(Resource.Id.Crashes_Button);
-            Button crashesError_Button = FindViewById<Button>(Resource.Id.CrashesError_Button);
 
             // Add code to translate number
             translateButton.Click += (sender, e) =>
