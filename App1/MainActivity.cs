@@ -61,6 +61,9 @@ namespace App1
                 try
                 {
                     // your code goes here.
+                    var a = 0;
+                    var b = 5;
+                    var c = a / b;
                 }
                 catch (Exception exception)
                 {
