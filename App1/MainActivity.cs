@@ -8,6 +8,7 @@ using Microsoft.AppCenter.Distribute;
 using Microsoft.AppCenter.Push;
 using System.Collections.Generic;
 using System.Text;
+using Java.Lang;
 
 namespace App1
 {
@@ -32,6 +33,7 @@ namespace App1
             TextView translatedPhoneWord = FindViewById<TextView>(Resource.Id.TranslatedPhoneWord);
             Button translateButton = FindViewById<Button>(Resource.Id.TranslateButton);
             Button crashes_Button = FindViewById<Button>(Resource.Id.Crashes_Button);
+            Button crashesError_Button = FindViewById<Button>(Resource.Id.CrashesError_Button);
 
             // Add code to translate number
             translateButton.Click += (sender, e) =>
@@ -53,6 +55,23 @@ namespace App1
             {
                 Crashes.GenerateTestCrash();
             };
+
+            crashesError_Button.Click += (sender, e) =>
+            {
+                try
+                {
+                    // your code goes here.
+                    if (5 > 10)
+                    {
+                        Crashes.GenerateTestCrash();
+                    }
+                }
+                catch (Exception exception)
+                {
+                    Crashes.TrackError(exception);
+                }
+            };
+
 
             Analytics.TrackEvent("Video clicked", new Dictionary<string, string> {
                 { "Category", "Music" },

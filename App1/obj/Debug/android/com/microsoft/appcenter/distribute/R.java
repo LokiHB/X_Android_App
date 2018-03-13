@@ -15,6 +15,7 @@ public final class R {
         public static final int icon=0x7f020001;
     }
     public static final class id {
+        public static final int CrashesError_Button=0x7f050005;
         public static final int Crashes_Button=0x7f050004;
         public static final int PhoneNumberText=0x7f050001;
         public static final int TranslateButton=0x7f050002;
