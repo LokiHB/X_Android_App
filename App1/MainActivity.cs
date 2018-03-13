@@ -53,24 +53,16 @@ namespace App1
             
             crashes_Button.Click += (sender, e) =>
             {
-                Crashes.GenerateTestCrash();
-            };
-
-            crashesError_Button.Click += (sender, e) =>
-            {
                 try
                 {
                     // your code goes here.
-                    var a = 0;
-                    var b = 5;
-                    var c = b / a;
+                    Crashes.GenerateTestCrash();
                 }
                 catch (Exception exception)
                 {
                     Crashes.TrackError(exception);
                 }
             };
-
 
             Analytics.TrackEvent("Video clicked", new Dictionary<string, string> {
                 { "Category", "Music" },
