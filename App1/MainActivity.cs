@@ -58,16 +58,11 @@ namespace App1
 
             crashesError_Button.Click += (sender, e) =>
             {
-                try
-                {
-                    // your code goes here.
-                    if (5 > 10)
-                    {
-                        Crashes.GenerateTestCrash();
-                    }
+                try{
+                    // your code goes here.               
+                    Crashes.GenerateTestCrash();
                 }
-                catch (Exception exception)
-                {
+                catch (Exception exception){
                     Crashes.TrackError(exception);
                 }
             };
