@@ -63,7 +63,7 @@ namespace App1
                     // your code goes here.
                     var a = 0;
                     var b = 5;
-                    var c = a / b;
+                    var c = b / a;
                 }
                 catch (Exception exception)
                 {
