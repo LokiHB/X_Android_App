@@ -154,3 +154,4 @@ D:\Project\X_Android_App\App1\obj\Debug\android\assets\System.ServiceModel.Inter
 D:\Project\X_Android_App\App1\obj\Debug\android\assets\System.Xml.dll.mdb
 D:\Project\X_Android_App\App1\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 D:\Project\X_Android_App\App1\obj\Debug\App1.dll.mdb
+D:\Project\X_Android_App\App1\bin\Debug\App1.dll.mdb
