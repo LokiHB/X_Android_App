@@ -18,7 +18,6 @@ namespace App1
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            // AppCenter.SetLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
             Push.SetSenderId("359445903465");
             AppCenter.Start("b73a260e-cee4-4993-bca6-bef0603d3f65",
                    typeof(Analytics), typeof(Crashes), typeof(Distribute), typeof(Push));
